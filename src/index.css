@@ -1,13 +1,143 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  font-family: system-ui, Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  background: #f6f7fb;
+  color: #111;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.nav {
+  background: white;
+  border-bottom: 1px solid #e7e7e7;
+  position: sticky;
+  top: 0;
+}
+
+.nav-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-weight: 800;
+}
+
+.nav-links {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.nav-link.active {
+  background: #111;
+  color: #fff;
+}
+
+.page-title {
+  margin: 8px 0;
+  font-size: 28px;
+}
+
+.page-subtitle {
+  margin: 0 0 18px 0;
+  color: #444;
+}
+
+.grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.link-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ececec;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.04);
+}
+
+.card-title {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+
+.card-text {
+  margin: 0;
+  line-height: 1.45;
+  color: #333;
+}
+
+.card-hint {
+  margin: 12px 0 0 0;
+  color: #666;
+  font-size: 13px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: #333;
+}
+
+.actions {
+  margin-top: 16px;
+}
+
+.btn {
+  border: 0;
+  background: #111;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.form {
+  background: white;
+  border: 1px solid #ececec;
+  border-radius: 16px;
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+  max-width: 520px;
+}
+
+.label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.input {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #dcdcdc;
+  font: inherit;
 }
